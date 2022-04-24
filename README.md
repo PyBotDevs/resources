@@ -1,6 +1,6 @@
 <img width='80px' src='https://github.com/PyBotDevs/isobot-assets/blob/isobot/branding/logos/normal-favicon.png'>
 
-# isobot-assets
+# isobot-resources
 ## Content
 This repository contains assets used for isobot and isobot-lazer, as well as for their webpages.
 
