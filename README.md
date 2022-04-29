@@ -1,4 +1,4 @@
-<img width='80px' src='https://github.com/PyBotDevs/isobot-assets/blob/isobot/branding/logos/normal-favicon.png'>
+<img align='center' width='80px' src='https://raw.githubusercontent.com/PyBotDevs/isobot-resources/base/branding/logos/normal-favicon.png'>
 
 # isobot-resources
 ## Content
