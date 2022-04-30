@@ -1,8 +1,8 @@
 <img align='center' width='80px' src='https://raw.githubusercontent.com/PyBotDevs/isobot-resources/base/branding/logos/normal-favicon.png'>
 
-# isobot-resources
+# resources
 ## Content
-This repository contains assets used for isobot and isobot-lazer, as well as for their webpages.
+This repository contains assets used for isobot, isobot-lazer, and other bots, as well as for their webpages.
 
 ## Dependencies
 There are no dependencies. You can simply use the github link for any of the assets.
