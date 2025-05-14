@@ -89,7 +89,7 @@
         "disabled": true,
         "bugged": false
     },
-    "modify_balance": {
+    "devtools modify_balance": {
         "name": "Modify Balance",
         "description": "Modify a user's wallet balance.",
         "type": "DevTools",
@@ -126,6 +126,36 @@
         "cooldown": null,
         "args": ["user", "reason (optional)"],
         "usable_by": "moderators with `ban members` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "warn": {
+        "name": "Warn Member",
+        "description": "Warns the specified user, with a specific reason.",
+        "type": "moderation",
+        "cooldown": null,
+        "args": ["user", "reason"],
+        "usable_by": "moderators with `manage messages` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "clear_all_warnings": {
+        "name": "Member Warnings Clear",
+        "description": "Clears all the warnings from the specified user.",
+        "type": "moderation",
+        "cooldown": null,
+        "args": ["user"],
+        "usable_by": "moderators with `manage messages` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "show_warnings": {
+        "name": "Member Warnings Display",
+        "description": "See all the server warnings for a specific user.",
+        "type": "moderation",
+        "cooldown": null,
+        "args": ["user"],
+        "usable_by": "everyone (in server ONLY)",
         "disabled": false,
         "bugged": false
     },
@@ -265,7 +295,7 @@
         "type": "general utilities",
         "cooldown": null,
         "args": ["user"],
-        "usable_by": "everyone",
+        "usable_by": "everyone (in server ONLY)",
         "disabled": false,
         "bugged": false
     },
@@ -329,12 +359,42 @@
         "disabled": false,
         "bugged": false
     },
+    "softwaregore": {
+        "name": "r/softwaregore",
+        "description": "Gets a post from r/softwaregore subreddit.",
+        "type": "reddit media",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
     "osugame": {
         "name": "r/osugame",
         "description": "Gets a post from r/osugame subreddit.",
         "type": "reddit media",
         "cooldown": null,
         "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "osu_user": {
+        "name": "osu! Player View",
+        "description": "View information on an osu! player.",
+        "type": "osu",
+        "cooldown": null,
+        "args": ["user"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "osu_beatmap": {
+        "name": "osu! Beatmap View",
+        "description": "View information on an osu! beatmap.",
+        "type": "osu",
+        "cooldown": null,
+        "args": ["query (beatmap id)"],
         "usable_by": "everyone",
         "disabled": false,
         "bugged": false
@@ -369,7 +429,7 @@
         "disabled": false,
         "bugged": false
     },
-    "afk_set": {
+    "afk set": {
         "name": "Set AFK Status",
         "description": "Going to be AFK? Use this command to set a AFK status so that people know when and why you are AFK.",
         "type": "AFK system",
@@ -379,7 +439,7 @@
         "disabled": false,
         "bugged": false
     },
-    "afk_remove": {
+    "afk remove": {
         "name": "Remove AFK Status",
         "description": "Remove your AFK status with this command.",
         "type": "AFK system",
@@ -389,7 +449,7 @@
         "disabled": false,
         "bugged": false
     },
-    "afk_mod_remove": {
+    "afk mod_remove": {
         "name": "Remove Member AFK",
         "description": "Remove an AFK status from a member (for example, if the AFK status breaks your server's rules).",
         "type": "AFK system",
@@ -419,7 +479,7 @@
         "disabled": false,
         "bugged": false
     },
-    "edit_rank": {
+    "devtools edit_rank": {
         "name": "Edit Member Rank",
         "description": "Sets a new level/rank for a specified user.",
         "type": "DevTools",
@@ -429,7 +489,7 @@
         "disabled": false,
         "bugged": false
     },
-    "edit_xp": {
+    "devtools edit_xp": {
         "name": "Edit Member XP",
         "description": "Sets a new XP amount for a specified user.",
         "type": "DevTools",
@@ -442,6 +502,16 @@
     "repo": {
         "name": "GitHub Repo",
         "description": "Shows the GitHub repository link of the bot. *Yes! Isobot is open-source.*",
+        "type": "general utilities",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "ping": {
+        "name": "Ping",
+        "description": "Get the current server latency of isobot in milliseconds.",
         "type": "general utilities",
         "cooldown": null,
         "args": null,
@@ -499,6 +569,16 @@
         "disabled": false,
         "bugged": false
     },
+    "avatar": {
+        "name": "Show User Avatar",
+        "description": "Return a user's profile picture/avatar.",
+        "type": "general utilities",
+        "cooldown": null,
+        "args": ["user (optional)"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
     "profile": {
         "name": "Show Isobot Profile Stats",
         "description": "Shows basic stats about your isobot profile, or someone else's profile stats.",
@@ -539,7 +619,7 @@
 	    "disabled": false,
 	    "bugged": false
     },
-    "squareroot": {
+    "math squareroot": {
 	    "name": "Square Root",
 	    "description": "Finds the square root of any positive number.",
 	    "type": "maths",
@@ -549,7 +629,7 @@
 	    "disabled": false,
 	    "bugged": false
     },
-    "area square": {
+    "math area_square": {
 	    "name": "Square Area ",
 	    "description": "Finds the area of a square.",
 	    "type": "maths",
@@ -559,7 +639,7 @@
 	    "disabled": false,
 	    "bugged": false
     },
-    "area rectangle": {
+    "math area_rectangle": {
 	    "name": "Rectangle Area",
 	    "description": "Finds the area of a rectangle.",
 	    "type": "maths",
@@ -569,9 +649,39 @@
 	    "disabled": false,
 	    "bugged": false
     },
-    "area circle": {
+    "math area_circle": {
 	    "name": "Circle Area",
-	    "description": "Finds the area of a circle. (Takes π as 22/7)",
+	    "description": "Finds the area of a circle. (Takes default value of π as 22/7)",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["radius", "pi"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math area_triangle": {
+	    "name": "Triangle Area",
+	    "description": "Finds the area of a triangle. (Uses Heron's formula)",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["side_length_a", "side_length_b", "side_length_c"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math volume_cuboid": {
+	    "name": "Cuboid Volume",
+	    "description": "Find the volume of a cuboid.\n This command can also be used to find the volume of a cube, by leaving out the `breadth` and `height` arguments.",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["length", "breadth (optional)", "height (optional)"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math volume_sphere": {
+	    "name": "Sphere Volume",
+	    "description": "Find the volume of a sphere using radius.",
 	    "type": "maths",
 	    "cooldown": null,
 	    "args": ["radius"],
@@ -579,12 +689,82 @@
 	    "disabled": false,
 	    "bugged": false
     },
-    "area triangle": {
-	    "name": "Triangle Area",
-	    "description": "Finds the area of a triangle. (Uses Heron's formula)",
+    "math volume_hemisphere": {
+	    "name": "Hemisphere Volume",
+	    "description": "Find the volume of a hemisphere using radius.",
 	    "type": "maths",
 	    "cooldown": null,
-	    "args": ["side_length_a", "side_length_b", "side_length_c"],
+	    "args": ["radius"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math volume_cone": {
+	    "name": "Cone Volume",
+	    "description": "Find the volume of a cone using base radius and height.",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["radius", "height"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math volume_cylinder": {
+	    "name": "Cylinder Volume",
+	    "description": "Find the volume of a cylinder using radius and height.",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["radius", "height"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math surfacearea_cuboid": {
+	    "name": "Cuboid Surface Area",
+	    "description": "Find the surface area of a cuboid.",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["length", "breadth (optional)", "height (optional)"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math surfacearea_sphere": {
+	    "name": "Sphere Surface Area",
+	    "description": "Find the surface area of a sphere using radius.",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["radius"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math surfacearea_hemisphere": {
+	    "name": "Hemisphere Surface Area",
+	    "description": "Find the surface area of a hemisphere using radius.",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["mode", "radius"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math surfacearea_cylinder": {
+	    "name": "Cylinder Surface Area",
+	    "description": "Find the surface area of a cylinder using radius and height.",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["mode", "radius", "height"],
+	    "usable_by": "everyone",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "math surfacearea_cone": {
+	    "name": "Cone Surface Area",
+	    "description": "Find the surface area of a cone using radius and height.",
+	    "type": "maths",
+	    "cooldown": null,
+	    "args": ["mode", "radius", "height"],
 	    "usable_by": "everyone",
 	    "disabled": false,
 	    "bugged": false
@@ -616,6 +796,16 @@
 	    "cooldown": null,
 	    "args": ["cog"],
 	    "usable_by": "the developer",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "vote": {
+	    "name": "Isobot vote",
+	    "description": "Vote for isobot on Top.gg and DBL.",
+	    "type": "general utilities",
+	    "cooldown": null,
+	    "args": null,
+	    "usable_by": "everyone",
 	    "disabled": false,
 	    "bugged": false
     },
@@ -729,106 +919,6 @@
 	    "disabled": false,
 	    "bugged": false
     },
-    "math volume_cuboid": {
-	    "name": "Cuboid Volume",
-	    "description": "Find the volume of a cuboid.\n This command can also be used to find the volume of a cube, by leaving out the `breadth` and `height` arguments.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["length", "breadth (optional)", "height (optional)"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math volume_sphere": {
-	    "name": "Sphere Volume",
-	    "description": "Find the volume of a sphere using radius.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["radius"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math volume_hemisphere": {
-	    "name": "Hemisphere Volume",
-	    "description": "Find the volume of a hemisphere using radius.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["radius"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math volume_cone": {
-	    "name": "Cone Volume",
-	    "description": "Find the volume of a cone using base radius and height.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["radius", "height"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math volume_cylinder": {
-	    "name": "Cylinder Volume",
-	    "description": "Find the volume of a cylinder using radius and height.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["radius", "height"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math surfacearea_cuboid": {
-	    "name": "Cuboid Surface Area",
-	    "description": "Find the surface area of a cuboid.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["length", "breadth (optional)", "height (optional)"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math surfacearea_sphere": {
-	    "name": "Sphere Surface Area",
-	    "description": "Find the surface area of a sphere using radius.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["radius"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math surfacearea_hemisphere": {
-	    "name": "Hemisphere Surface Area",
-	    "description": "Find the surface area of a hemisphere using radius.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["mode", "radius"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math surfacearea_cylinder": {
-	    "name": "Cylinder Surface Area",
-	    "description": "Find the surface area of a cylinder using radius and height.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["mode", "radius", "height"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
-    "math surfacearea_cone": {
-	    "name": "Cone Surface Area",
-	    "description": "Find the surface area of a cone using radius and height.",
-	    "type": "maths",
-	    "cooldown": null,
-	    "args": ["mode", "radius", "height"],
-	    "usable_by": "everyone",
-	    "disabled": false,
-	    "bugged": false
-    },
     "nuke": {
         "name": "Nuke",
         "description": "Completely wipes a text channel in the server.",
@@ -845,7 +935,7 @@
         "type": "general utilities",
         "cooldown": null,
         "args": null,
-        "usable_by": "everyone",
+        "usable_by": "everyone (in server ONLY)",
         "disabled": false,
         "bugged": false
     },
@@ -916,6 +1006,126 @@
         "cooldown": null,
         "args": null,
         "usable_by": "everyone (in DMs)",
+        "disabled": false,
+        "bugged": false
+    },
+    "event leaderboard": {
+        "name": "Event Leaderboard",
+        "description": "View the global leaderboard for the special in-game event.",
+        "type": "special events",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "event stats": {
+        "name": "Event Stats",
+        "description": "Enter your one-time verification code to verify membership in a server. (DM-ONLY)",
+        "type": "special events",
+        "cooldown": null,
+        "args": ["user (optional)"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "randomnumber": {
+        "name": "Random Number Chooser",
+        "description": "Choose a random number from x to y.",
+        "type": "fun",
+        "cooldown": null,
+        "args": ["x (number)", "y (number)"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocoin balance": {
+        "name": "IsoCoin Balance",
+        "description": "See your IsoCoin balances.",
+        "type": "IsoCoin system",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocoin daily": {
+        "name": "IsoCoin Daily",
+        "description": "Collect your daily reward of IsoCoins.",
+        "type": "IsoCoin system",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocoin shop": {
+        "name": "IsoCoin Shop",
+        "description": "See all the items that you can buy using your IsoCoins.",
+        "type": "IsoCoin system",
+        "cooldown": "24 hours",
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocard register": {
+        "name": "IsoCard Registration",
+        "description": "Register a new IsoCard in your account.",
+        "type": "IsoCard system",
+        "cooldown": null,
+        "args": ["ssc (4 digit number)"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocard info": {
+        "name": "IsoCard Info",
+        "description": "View information on your IsoCard.",
+        "type": "IsoCard system",
+        "cooldown": null,
+        "args": ["card_number"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocard my_cards": {
+        "name": "IsoCard Cards List",
+        "description": "View a list of all your cards.",
+        "type": "IsoCard system",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocard options_label": {
+        "name": "IsoCard Options: Set Card Label",
+        "description": "Set your IsoCard's display label.",
+        "type": "IsoCard system",
+        "cooldown": null,
+        "args": ["card_number", "new_label (leave blank to remove label from card)"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocard verify_transaction": {
+        "name": "IsoCard Transaction Verification",
+        "description": "Verify an ongoing transaction from your IsoCard account.",
+        "type": "IsoCard system",
+        "cooldown": null,
+        "args": ["verification_code (6-digit number)"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "isocard transaction_history": {
+        "name": "IsoCard Transaction History",
+        "description": "View all your past transactions (paid and received)",
+        "type": "IsoCard system",
+        "cooldown": null,
+        "args": ["transaction_type", "page (number)"],
+        "usable_by": "everyone",
         "disabled": false,
         "bugged": false
     }
