@@ -519,13 +519,73 @@
         "disabled": false,
         "bugged": false
     },
-    "embedbuilder": {
-        "name": "EmbedBuilder",
-        "description": "Build an embed using a simple command and EmbedBuilder.",
-        "type": "general utilities",
+    "embeds create": {
+        "name": "Create Custom Embed",
+        "description": "Create a new custom embed for the server.",
+        "type": "embed system",
         "cooldown": null,
-        "args": ["title", "description", "image_url (optional)", "thumbnail_url (optional)", "color (optional)", "footer_text (optional)", "footer_icon_url (optional)"],
-        "usable_by": "everyone",
+        "args": ["embed_name (string-type ID)", "title", "description", "color", "timestamp_enabled", "title_url", "image_url", "thumbnail"],
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "embeds delete": {
+        "name": "Custom Embed Delete",
+        "description": "Delete a custom embed from the server.",
+        "type": "embed system",
+        "cooldown": null,
+        "args": ["embed_name"],
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "embeds list": {
+        "name": "Custom Server Embeds List",
+        "description": "View a list of all the custom embeds in this server.",
+        "type": "embed system",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "embeds view": {
+        "name": "Custom Embed Preview",
+        "description": "See a preview of an existing custom embed in the server.",
+        "type": "embed system",
+        "cooldown": null,
+        "args": ["embed_name"],
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "embeds add_embed_field": {
+        "name": "Add Custom Embed Field",
+        "description": "Appends a new field to an existing server embed.",
+        "type": "embed system",
+        "cooldown": null,
+        "args": ["embed_name", "name", "value", "inline"],
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "embeds add_embed_author": {
+        "name": "Add Custom Embed Author",
+        "description": "Add or replace the author section of an existing server embed.",
+        "type": "embed system",
+        "cooldown": null,
+        "args": ["embed_name", "author_name", "url", "icon_url"],
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "embeds add_embed_footer": {
+        "name": "Add Custom Embed Footer",
+        "description": "Add or replace the footer of an existing server embed.",
+        "type": "embed system",
+        "cooldown": null,
+        "args": ["embed_name", "text", "icon_url"],
+        "usable_by": "moderators with `manage guild` permissions",
         "disabled": false,
         "bugged": false
     },
