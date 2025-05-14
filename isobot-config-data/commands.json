@@ -9,6 +9,36 @@
         "disabled": false,
         "bugged": false
     },
+    "work_list": {
+        "name": "Work List",
+        "description": "Shows a list of all the jobs currently available.",
+        "type": "economy system",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "work_select": {
+        "name": "Work Select",
+        "description": "Choose the job you want to work.",
+        "type": "economy system",
+        "cooldown": 1800,
+        "args": ["job"],
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
+    "work_resign": {
+        "name": "Work Resign",
+        "description": "Quit your job.",
+        "type": "economy system",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "everyone",
+        "disabled": false,
+        "bugged": false
+    },
     "hunt": {
         "name": "Hunt",
         "description": "Take out your hunting rifle and hunt down insects or animals to sell.",
