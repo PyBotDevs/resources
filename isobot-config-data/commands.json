@@ -1218,5 +1218,82 @@
         "usable_by": "everyone",
         "disabled": false,
         "bugged": false
+    },
+    "serverconfig enable_welcome_message": {
+        "name": "ServerConfig Enable Welcome Message",
+        "description": "Automatically send a welcome message to a specified channel in the server, when a member joins.",
+        "type": "serverconfig",
+        "cooldown": null,
+        "args": ["channel", "message"],
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "serverconfig disable_welcome_message": {
+        "name": "ServerConfig Disable Welcome Message",
+        "description": "Disables welcome message autoresponder for this server.",
+        "type": "serverconfig",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "serverconfig enable_goodbye_message": {
+        "name": "ServerConfig Enable Goodbye Message",
+        "description": "Automatically send a goodbye message to a specified channel in the server, when a member leaves.",
+        "type": "serverconfig",
+        "cooldown": null,
+        "args": ["channel", "message"],
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "serverconfig disable_goodbye_message": {
+        "name": "ServerConfig Disable Goodbye Message",
+        "description": "Disables goodbye message autoresponder for this server.",
+        "type": "serverconfig",
+        "cooldown": null,
+        "args": null,
+        "usable_by": "moderators with `manage guild` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "autoresponder add": {
+        "name": "ServerConfig Add Autoresponder",
+        "description": "Add a new text-based autoresponder to your server.",
+        "type": "serverconfig",
+        "cooldown": null,
+        "args": [
+            "autoresponder_name",
+            "text_trigger",
+            "text_response",
+            "trigger_condition",
+            "active_channel (leave blank to use in all channels)",
+            "match_case"
+        ],
+        "usable_by": "moderators with `manage messages` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "autoresponder remove": {
+        "name": "ServerConfig Remove Autoresponder",
+        "description": "Remove an existing autoresponder from your server.",
+        "type": "serverconfig",
+        "cooldown": null,
+        "args": ["autoresponder_name"],
+        "usable_by": "moderators with `manage messages` permissions",
+        "disabled": false,
+        "bugged": false
+    },
+    "autoresponder list": {
+        "name": "ServerConfig List/View Autoresponder",
+        "description": "View a list of all the autoresponders in the server, or info on a specific autoresponder.",
+        "type": "serverconfig",
+        "cooldown": null,
+        "args": ["autoresponder_name (leave blank to list all autoresponders)"],
+        "usable_by": "moderators with `manage messages` permissions",
+        "disabled": false,
+        "bugged": false
     }
 }
