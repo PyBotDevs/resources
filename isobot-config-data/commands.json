@@ -1101,7 +1101,7 @@
     },
     "owoify": {
 	    "name": "Owoify",
-	    "description": "Lets you owoify any text you want (uwu girl moment)",
+	    "description": "Lets you owoify any text you want! (uwu girl moment)",
 	    "type": "fun",
 	    "cooldown": null,
 	    "args": ["text"],
