@@ -679,7 +679,7 @@
         "disabled": false,
         "bugged": false
     },
-    "automod": {
+    "automod config": {
 	    "name": "Show Automod Server Configuration",
 	    "description": "Shows the current configuration of your server's automod system.",
 	    "type": "automod",
@@ -689,7 +689,7 @@
 	    "disabled": false,
 	    "bugged": false
     },
-    "automod_swearfilter": {
+    "automod swearfilter": {
 	    "name": "Toggle Automod Swear-filter",
 	    "description": "Lets you turn on or off the automod swear-filter for your server.",
 	    "type": "automod",
@@ -699,12 +699,122 @@
 	    "disabled": false,
 	    "bugged": false
     },
-    "automod_linkblocker": {
-	    "name": "Toggle Automod Link Blocker",
+    "automod use_default_keywords": {
+	    "name": "Automod Swear-filter Default Keywords Toggle",
+	    "description": "Choose whether or not you want to use the default keywords for automod's swear-filter.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": ["toggle"],
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod view_custom_keywords": {
+	    "name": "Automod Swear-filter View Keywords",
+	    "description": "Shows a list of the custom automod swear-filter keywords set for your server.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": null,
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod add_custom_keyword": {
+	    "name": "Automod Swear-filter Add Custom Keyword",
+	    "description": "Adds a custom keyword to your server's swear-filter.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": ["keyword"],
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod remove_custom_keyword": {
+	    "name": "Automod Swear-filter Remove Custom Keyword",
+	    "description": "Removes a custom keyword (matching its id) from your server's swear-filter.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": ["id (keyword id)"],
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod linkblocker": {
+	    "name": "Toggle Automod Link-Blocker",
 	    "description": "Lets you turn on or off the automod link-blocker for your server.",
 	    "type": "automod",
 	    "cooldown": null,
 	    "args": ["toggle"],
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod linkblocker_only_whitelisted": {
+	    "name": "Automod Link-Blocker Only Whitelisted Links Toggle",
+	    "description": "Only allows whitelisted links in the server and blocks all other links sent in a text channel.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": ["toggle"],
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod linkblocker_add_whitelist": {
+	    "name": "Automod Link-Blocker Add Whitelisted Link",
+	    "description": "Adds a link to your server link blocker's whitelist.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": ["link (url)"],
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod linkblocker_add_blacklist": {
+	    "name": "Automod Link-Blocker Add Blacklisted Link",
+	    "description": "Adds a link to your server link blocker's blacklist.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": ["link (url)"],
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod linkblocker_view_whitelisted": {
+	    "name": "Automod Link-Blocker View Whitelisted Links",
+	    "description": "Shows a list of the whitelisted links set for this server.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": null,
+	    "usable_by": "everyone (in server ONLY)",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod linkblocker_view_blacklisted": {
+	    "name": "Automod Link-Blocker View Blacklisted Links",
+	    "description": "Shows a list of the blacklisted links set for this server.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": null,
+	    "usable_by": "everyone (in server ONLY)",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod linkblocker_remove_whitelist": {
+	    "name": "Automod Link-Blocker Remove Whitelisted Link",
+	    "description": "Removes a whitelisted link (matching its id) from this server's link blocker.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": ["id (whitelisted link id)"],
+	    "usable_by": "server admins",
+	    "disabled": false,
+	    "bugged": false
+    },
+    "automod ": {
+	    "name": "Automod Link-Blocker Remove Blacklisted Link",
+	    "description": "Removes a blacklisted link (matching its id) from this server's link blocker.",
+	    "type": "automod",
+	    "cooldown": null,
+	    "args": ["id (blacklisted link id)"],
 	    "usable_by": "server admins",
 	    "disabled": false,
 	    "bugged": false
