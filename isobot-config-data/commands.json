@@ -416,7 +416,7 @@
         "cooldown": null,
         "args": ["user"],
         "usable_by": "everyone",
-        "disabled": false,
+        "disabled": true,
         "bugged": false
     },
     "osu_beatmap": {
@@ -426,7 +426,7 @@
         "cooldown": null,
         "args": ["query (beatmap id)"],
         "usable_by": "everyone",
-        "disabled": false,
+        "disabled": true,
         "bugged": false
     },
     "donate": {
